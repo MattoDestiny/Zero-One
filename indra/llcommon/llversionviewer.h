@@ -38,10 +38,10 @@ const S32 LL_VERSION_MINOR = 5;
 const S32 LL_VERSION_PATCH = 10;
 const S32 LL_VERSION_BUILD = 4;
 
-const char * const LL_CHANNEL = "Astra";
+const char * const LL_CHANNEL = "Zero-One";
 
 #if LL_DARWIN
-const char * const LL_VERSION_BUNDLE_ID = "com.secondlife.Astra.viewer";
+const char * const LL_VERSION_BUNDLE_ID = "com.secondlife.Zero-One.viewer";
 #endif
 
 #endif

@@ -329,7 +329,7 @@ void LLFloaterAbout::show(void*)
 
 static std::string get_viewer_release_notes_url()
 {
-	return "http://www.aurora-sim.org";
+	return "http://www.Zero-One.org";
 	/*std::ostringstream version;
 	version <<  LL_VERSION_MAJOR
 		<< "." << LL_VERSION_MINOR

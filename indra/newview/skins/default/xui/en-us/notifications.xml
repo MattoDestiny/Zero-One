@@ -1,11 +1,11 @@
 <?xml version="1.0" ?><notifications>
 
   <global name="VIEWER_NAME">
-    Astra Viewer
+    Zero-One Viewer
   </global>
 
   <global name="VIEWER_SITE">
-    http://www.aurora-sim.org/
+    http://www.Zero-One.org/
   </global>
   
   <global name="skipnexttime">

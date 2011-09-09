@@ -139,7 +139,7 @@
       <key>Type</key>
       <string>String</string>
       <key>Value</key>
-      <string>http://app.singularityviewer.org/dict/</string>
+      <string>http://app.Zero-One.org/dict/</string>
     </map>
 	<key>SpellDisplay</key>
 	<map>
@@ -390,7 +390,7 @@
     <key>Type</key>
     <string>String</string>
     <key>Value</key>
-    <string>http://app.singularityviewer.org/client_definitions.xml</string>
+    <string>http://app.Zero-One.org/client_definitions.xml</string>
   </map>
 
   <key>LastSelectedGrid</key>

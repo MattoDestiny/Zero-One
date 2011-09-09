@@ -5,7 +5,34 @@
       <key>default_grids_version</key><string>2</string>
     </map>
 
-
+   <!-- Gay Virtual San Francisco -->
+    <map>
+        <key>gridname</key>
+            <string>Gay Virtual San Francisco</string>
+		<key>gridnick</key>
+            <string>gvsf</string>
+        <key>helperuri</key>
+            <string>http://www.gaysanfrancisco.us.com:8002/</string>
+        <key>loginpage</key>
+            <string>http://www.gaysanfrancisco.us.com/loginscreen/</string>
+        <key>loginuri</key>
+            <string>http://grid.gaysanfrancisco.us.com:8002/</string>
+        <key>password</key>
+            <string>http://www.gaysanfrancisco.us.com/index.php?page=forgotpass</string>
+        <key>platform</key>
+            <string>OpenSim</string>
+        <key>register</key>
+            <string>http://www.gaysanfrancisco.us.com/index.php?page=register</string>
+        <key>render_compat</key>
+            <boolean>1</boolean>
+        <key>search</key>
+            <string>http://www.gaysanfrancisco.us.com/search.php?</string>
+        <key>support</key>
+            <string>http://www.gaysanfrancisco.us.com/index.php</string>
+        <key>website</key>
+            <string>http://www.gaysanfrancisco.us.com/index.php</string>
+        </map>
+		
     <!-- Nova -->
     <map>
       <key>gridname</key>
@@ -31,6 +58,8 @@
       <key>render_compat</key>
       <boolean>1</boolean>
     </map>
+	
+	<!-- AnSky -->
          <map>
         <key>gridname</key>
             <string>AnSky Grid</string>

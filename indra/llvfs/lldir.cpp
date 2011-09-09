@@ -275,7 +275,7 @@ std::string LLDir::buildSLOSCacheDir() const
 	}
 	else
 	{
-		res = getOSCacheDir() + mDirDelimiter + "AstraViewer";
+		res = getOSCacheDir() + mDirDelimiter + "Zero-One";
 	}
 	return res;
 }

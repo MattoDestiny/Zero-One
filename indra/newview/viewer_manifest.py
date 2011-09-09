@@ -136,7 +136,7 @@ class ViewerManifest(LLManifest):
     def installer_prefix(self):
         mapping={"secondlife":'SecondLife_',
                  "snowglobe":'Snowglobe_',
-                 "Astra":'Astra_'}
+                 "Zero-One":'Zero-One_'}
         return mapping[self.viewer_branding_id()]
 
     def flags_list(self):
@@ -172,14 +172,14 @@ class ViewerManifest(LLManifest):
 
 class WindowsManifest(ViewerManifest):
     def final_exe(self):
-        return 'AstraViewer.exe'
+        return 'Zero-One.exe'
 
 
     def construct(self):
         super(WindowsManifest, self).construct()
         # the final exe is complicated because we're not sure where it's coming from,
         # nor do we have a fixed name for the executable
-        self.path(src='%s/astraviewer.exe' % self.args['configuration'], dst=self.final_exe())
+        self.path(src='%s/Zero-One.exe' % self.args['configuration'], dst=self.final_exe())
 
         # Plugin host application
         self.path(os.path.join(os.pardir,
@@ -390,17 +390,17 @@ class WindowsManifest(ViewerManifest):
         !define VERSION_LONG "%(version)s"
         !define VERSION_DASHES "%(version_dashes)s"
         """ % substitution_strings
-        installer_file = "Astra_%(version_short)s_Setup.exe"
+        installer_file = "Zero-One_%(version_short)s_Setup.exe"
         grid_vars_template = """
         OutFile "%(installer_file)s"
-        !define VIEWERNAME "Astra Viewer"
+        !define VIEWERNAME "Zero-One"
         !define INSTFLAGS "%(flags)s"
-        !define INSTNAME   "AstraViewer"
-        !define SHORTCUT   "Astra Viewer"
+        !define INSTNAME   "Zero-One"
+        !define SHORTCUT   "Zero-One"
         !define URLNAME   "secondlife"
-        !define INSTALL_ICON "install_icon_Astra.ico"
-        !define UNINSTALL_ICON "install_icon_Astra.ico"
-        Caption "Astra Viewer ${VERSION}"
+        !define INSTALL_ICON "install_icon_Zero-One.ico"
+        !define UNINSTALL_ICON "install_icon_Zero-One.ico"
+        Caption "Zero-One ${VERSION}"
         """
         if 'installer_name' in self.args:
             installer_file = self.args['installer_name']

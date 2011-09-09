@@ -546,7 +546,7 @@ set(viewer_SOURCE_FILES
     )
 
 # This gets renamed in the packaging step
-set(VIEWER_BINARY_NAME "astraviewer" CACHE STRING
+set(VIEWER_BINARY_NAME "Zero-One" CACHE STRING
     "The name of the viewer executable to create.")
 
 if ((LINUX OR DARWIN) AND NOT DARWIN_PPC)
@@ -1159,8 +1159,8 @@ if (WINDOWS)
         ${ARTWORK_DIR}/res/lltooltranslate.cur
         ${ARTWORK_DIR}/res/lltoolzoomin.cur
         ${ARTWORK_DIR}/res/lltoolzoomout.cur
-        ${ARTWORK_DIR}/res/astra_icon.BMP
-        ${ARTWORK_DIR}/res/astra_icon.ico
+        ${ARTWORK_DIR}/res/Zero-One_icon.BMP
+        ${ARTWORK_DIR}/res/Zero-One_icon.ico
         ${ARTWORK_DIR}/res/resource.h
         ${ARTWORK_DIR}/res/toolbuy.cur
         ${ARTWORK_DIR}/res/toolopen.cur

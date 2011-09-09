@@ -2158,7 +2158,7 @@ bool LLAppViewer::initConfiguration()
     mYieldTime = gSavedSettings.getS32("YieldTime");
              
 	// XUI:translate
-	gSecondLife = "Astra Viewer";
+	gSecondLife = "Zero-One Viewer";
 
 	// Read skin/branding settings if specified.
 	//if (! gDirUtilp->getSkinDir().empty() )
@@ -3430,7 +3430,7 @@ void LLAppViewer::badNetworkHandler()
 		"the issue. \n"
 		" \n"
 		"If the problem continues, please report the issue at: \n"
-		"http://www.Astraviewer.org" << grid_support_msg;
+		"http://www.Zero-One.org" << grid_support_msg;
 	forceDisconnect(message.str());
 }
 

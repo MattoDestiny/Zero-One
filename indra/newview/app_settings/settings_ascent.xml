@@ -3,7 +3,7 @@
 	<map>
 		<!-- Ascent-Specific Settings -->
 
-    <key>AstraBoldGroupModerator</key>
+    <key>Zero-OneBoldGroupModerator</key>
     <map>
       <key>Comment</key>
       <string>Should group moderator chat be displayed in bold</string>
