@@ -309,7 +309,7 @@ class WindowsManifest(ViewerManifest):
             #~ self.end_prefix()
 
         # The config file name needs to match the exe's name.
-        #~ self.path(src="%s/astraviewer.exe.config" % self.args['configuration'], dst=self.final_exe() + ".config")
+        #~ self.path(src="%s/Zero-One.exe.config" % self.args['configuration'], dst=self.final_exe() + ".config")
 
         # Vivox runtimes
         if self.prefix(src="vivox-runtime/i686-win32", dst=""):
@@ -473,7 +473,7 @@ class DarwinManifest(ViewerManifest):
                 self.path("SecondLife.nib")
 
    			  # SG:TODO
-                self.path("../newview/res/Astra.icns", dst="Astra.icns")
+                self.path("../newview/res/Zero-One.icns", dst="Zero-One.icns")
 
                 # Translations
                 self.path("English.lproj")
@@ -567,10 +567,10 @@ class DarwinManifest(ViewerManifest):
                                  { 'viewer_binary' : self.dst_path_of('Contents/MacOS/'+self.app_name())})
 
     def app_name(self):
-        return "Astra"
+        return "Zero-One"
         
     def info_plist_name(self):
-        return "Info-Astra.plist"
+        return "Info-Zero-One.plist"
 
     def package_finish(self):
         channel_standin = self.app_name()
@@ -684,7 +684,7 @@ class LinuxManifest(ViewerManifest):
             self.path("secondlife-stripped","bin/"+self.binary_name())
             self.path("../linux_crash_logger/linux-crash-logger-stripped","linux-crash-logger.bin")
         else:
-            self.path("astraviewer","bin/"+self.binary_name())
+            self.path("Zero-One","bin/"+self.binary_name())
             self.path("../linux_crash_logger/linux-crash-logger","linux-crash-logger.bin")
 
         self.path("linux_tools/launch_url.sh","launch_url.sh")
@@ -704,13 +704,13 @@ class LinuxManifest(ViewerManifest):
         self.path("featuretable_linux.txt")
 
     def wrapper_name(self):
-        return 'Astra'
+        return 'Zero-One'
 
     def binary_name(self):
-        return 'Astra-do-not-run-directly'
+        return 'Zero-One-do-not-run-directly'
     
     def icon_name(self):
-        return "Astra_icon.png"
+        return "Zero-One_icon.png"
 
     def package_finish(self):
         if 'installer_name' in self.args:

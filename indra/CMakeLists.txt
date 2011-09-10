@@ -18,7 +18,7 @@ cmake_minimum_required(VERSION 2.6.2 FATAL_ERROR)
 cmake_policy(SET CMP0003 OLD)
 
 set(ROOT_PROJECT_NAME "Zero-One" CACHE STRING
-    "The root project/makefile/solution name. Defaults to Astra.")
+    "The root project/makefile/solution name. Defaults to Zero-One.")
 project(${ROOT_PROJECT_NAME})
 
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
@@ -108,7 +108,7 @@ if (VIEWER)
 
   add_subdirectory(${VIEWER_PREFIX}newview/statemachine)
   add_subdirectory(${VIEWER_PREFIX}newview)
-  add_dependencies(viewer astraviewer)
+  add_dependencies(viewer Zero-One)
 endif (VIEWER)
 
 # Linux builds the viewer and server in 2 separate projects

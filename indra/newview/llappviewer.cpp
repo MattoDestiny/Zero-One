@@ -329,7 +329,7 @@ static BOOL gDoDisconnect = FALSE;
 static std::string gLaunchFileOnQuit;
 
 // Used on Win32 for other apps to identify our window (eg, win_setup)
-const char* const VIEWER_WINDOW_CLASSNAME = "Astra Viewer"; // Don't change
+const char* const VIEWER_WINDOW_CLASSNAME = "Zero-One"; // Don't change
 
 //----------------------------------------------------------------------------
 // File scope definitons
@@ -570,7 +570,7 @@ bool LLAppViewer::init()
 	LLVector4a::initClass();
 	// Need to do this initialization before we do anything else, since anything
 	// that touches files should really go through the lldir API
-	gDirUtilp->initAppDirs("AstraViewer");
+	gDirUtilp->initAppDirs("Zero-One");
 	// set skin search path to default, will be overridden later
 	// this allows simple skinned file lookups to work
 	gDirUtilp->setSkinFolder("default");
