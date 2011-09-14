@@ -101,17 +101,17 @@ lggIrcData::lggIrcData(std::string iserver, std::string iname, std::string iport
 }
 
 lggIrcData::lggIrcData()
-  : server("irc.freenode.org"),
-  name("Imprudence Chat"),
+  : server("irc.freenode.net"),
+  name("GayNation-OpenVirtualGrid"),
   port("6667"),
-  channel("#imprudence"),
+  channel("#GayNation-OpenVirtualGrid"),
   serverPassword(""),
   channelPassword(""),
   nickPassword(""),
   autoLogin(TRUE),
   id(LLUUID::generateNewID())
 {
-	std::string first("Imprudence");
+	std::string first("GayNation-Grid");
 	// Prevents crash at startup where viewer object and NVPair may not exist yet.
 	// In the event that either of these happen. Name is replaced with "Imprudence"
 	if(gAgent.getAvatarObject())
