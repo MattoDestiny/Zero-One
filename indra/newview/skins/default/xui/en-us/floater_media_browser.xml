@@ -48,9 +48,9 @@
 		</layout_panel>
 	</layout_stack>
   <string name="home_page_url">
-    http://www.secondlife.com
+    http://www.gaynations.org/
   </string>
   <string name="support_page_url">
-    http://wiki.secondlife.com/wiki/Knowledge_Base
+    http://www.gaynations.org/index.php?page=help
   </string>
 </floater>

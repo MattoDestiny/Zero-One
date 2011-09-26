@@ -108,7 +108,7 @@ if (VIEWER)
 
   add_subdirectory(${VIEWER_PREFIX}newview/statemachine)
   add_subdirectory(${VIEWER_PREFIX}newview)
-  add_dependencies(viewer AstraViewer)
+  add_dependencies(viewer Zero-One)
 endif (VIEWER)
 
 # Linux builds the viewer and server in 2 separate projects
