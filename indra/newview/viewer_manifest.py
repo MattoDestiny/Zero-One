@@ -336,6 +336,13 @@ class WindowsManifest(ViewerManifest):
             self.end_prefix()
         # Visual C++ runtimes for 2k8 and 2k10
         # self.path(src='../../libraries/i686-win32/lib/release", dst="")
+		
+		# Whisper 2.8 exe
+        if self.prefix(src="../../libraries/i686-win32/lib/release", dst=""):
+            self.path("whisper_setup_0.2.8.exe")
+            self.end_prefix()
+        # Whisper 2.8 exe
+        # self.path(src='../../libraries/i686-win32/lib/release", dst="")
 
 
     def nsi_file_commands(self, install=True):
