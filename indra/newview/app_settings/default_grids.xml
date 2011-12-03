@@ -1,37 +1,36 @@
 <llsd>
   <array>
-
     <map>
       <key>default_grids_version</key><string>2</string>
     </map>
 
-   <!-- Gay Virtual San Francisco -->
+   <!-- GayNations -->
     <map>
-        <key>gridname</key>
-            <string>Gay Virtual San Francisco</string>
-		<key>gridnick</key>
-            <string>gvsf</string>
-        <key>helperuri</key>
-            <string>http://www.gaysanfrancisco.us.com:8002/</string>
-        <key>loginpage</key>
-            <string>http://www.gaysanfrancisco.us.com/loginscreen/</string>
-        <key>loginuri</key>
-            <string>http://grid.gaysanfrancisco.us.com:8002/</string>
-        <key>password</key>
-            <string>http://www.gaysanfrancisco.us.com/index.php?page=forgotpass</string>
-        <key>platform</key>
-            <string>OpenSim</string>
-        <key>register</key>
-            <string>http://www.gaysanfrancisco.us.com/index.php?page=register</string>
-        <key>render_compat</key>
-            <boolean>1</boolean>
-        <key>search</key>
-            <string>http://www.gaysanfrancisco.us.com/search.php?</string>
-        <key>support</key>
-            <string>http://www.gaysanfrancisco.us.com/index.php</string>
-        <key>website</key>
-            <string>http://www.gaysanfrancisco.us.com/index.php</string>
-        </map>
+      <key>gridname</key>
+      <string>Gay Nations - San Francisco</string>
+	  <key>gridnick</key>
+      <string>Gay Nations</string>
+      <key>helperuri</key>
+      <string>http://GayNations.org:8002/</string>
+      <key>loginpage</key>
+      <string>http://GayNations.org/loginscreen/</string>
+      <key>loginuri</key>
+      <string>http://grid.GayNations.org:8002/</string>
+      <key>password</key>
+      <string>http://GayNations.org/index.php?page=forgotpass</string>
+      <key>platform</key>
+      <string>Aurora</string>
+      <key>register</key>
+      <string>http://GayNations.org/index.php?page=register</string>
+      <key>render_compat</key>
+      <boolean>1</boolean>
+      <key>search</key>
+      <string>http://GayNations.org/search.php?</string>
+      <key>support</key>
+      <string>http://GayNations.org/index.php</string>
+      <key>website</key>
+      <string>http://GayNations.org/index.php</string>
+    </map>
 		
     <!-- Nova -->
     <map>
@@ -59,33 +58,6 @@
       <boolean>1</boolean>
     </map>
 	
-	<!-- AnSky -->
-         <map>
-        <key>gridname</key>
-            <string>AnSky Grid</string>
-        <key>gridnick</key>
-            <string>ansky</string>
-        <key>helperuri</key>
-            <string>http://grid.ansky.ca</string>
-        <key>loginpage</key>
-            <string>https://grid.ansky.ca/loginscreen/</string>
-        <key>loginuri</key>
-            <string>http://grid.ansky.ca</string>
-        <key>password</key>
-            <string />
-        <key>platform</key>
-            <string>OpenSim</string>
-        <key>register</key>
-            <string>https://grid.ansky.ca/index.php?page=register</string>
-        <key>render_compat</key>
-            <boolean>0</boolean>
-        <key>search</key>
-            <string />
-        <key>support</key>
-            <string />
-        <key>website</key>
-            <string>http://www.ansky.ca/</string>
-        </map>
     <!-- Local Host -->
     <map>
       <key>gridname</key>
