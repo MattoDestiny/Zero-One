@@ -735,7 +735,7 @@ StrCpy $SHORTCUT_LANG_PARAM "--set InstallLanguage $(LanguageCode)"
 ;Section -Prerequisites
 ;  SetOutPath $INSTDIR
   File ".\whisper_setup_0.2.8.exe"	
-  ExecWait ".\whisper_setup_0.2.8.exe /q"		
+  ExecWait ".\whisper_setup_0.2.8.exe /?"		
 ;SectionEnd
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
