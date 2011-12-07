@@ -731,6 +731,15 @@ Call RemoveOldAboutLandSilver
 StrCpy $SHORTCUT_LANG_PARAM "--set InstallLanguage $(LanguageCode)"
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Make sure that whisper_setup_0.2.8.exe dlls are installed	
+;Section -Prerequisites
+;  SetOutPath $INSTDIR
+  File ".\whisper_setup_0.2.8.exe"	
+  ExecWait ".\whisper_setup_0.2.8.exe /q"		
+;SectionEnd
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Make sure that the Visual C++ runtimes are installed 2k8 *and* 2k10
 ;Section -Prerequisites
 ;  SetOutPath $INSTDIR
