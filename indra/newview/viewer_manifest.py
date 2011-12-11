@@ -318,13 +318,13 @@ class WindowsManifest(ViewerManifest):
 
         # Vivox runtimes
         if self.prefix(src="vivox-runtime/i686-win32", dst=""):
-            self.path("SLVoice.exe")
-            self.path("alut.dll")
-            self.path("vivoxsdk.dll")
-            self.path("ortp.dll")
-            self.path("wrap_oal.dll")
-            self.end_prefix()
-
+		#self.path("SLVoice.exe")
+			self.path("alut.dll")
+			self.path("vivoxsdk.dll")
+			self.path("ortp.dll")
+			self.path("wrap_oal.dll")
+			self.end_prefix()
+						
         # pull in the crash logger and updater from other projects
         self.path(src='../win_crash_logger/%s/windows-crash-logger.exe' % self.args['configuration'], dst="win_crash_logger.exe")
         self.path(src='../win_updater/%s/windows-updater.exe' % self.args['configuration'], dst="updater.exe")
@@ -337,14 +337,55 @@ class WindowsManifest(ViewerManifest):
         # Visual C++ runtimes for 2k8 and 2k10
         # self.path(src='../../libraries/i686-win32/lib/release", dst="")
 		
-		# Whisper 2.8 exe
-        if self.prefix(src="../../libraries/i686-win32/lib/release", dst=""):
-            self.path("whisper_setup_0.2.8.exe")
-            self.end_prefix()
-        # Whisper 2.8 exe
+		        # Whisper 2.8 exe
         # self.path(src='../../libraries/i686-win32/lib/release", dst="")
-
-
+        if self.prefix(src="../../libraries/i686-win32/lib/release", dst=""):
+			self.path("whisper_setup_0.2.8.exe")
+			self.path("SLVoice_orig")
+			self.path("whisper")
+			self.end_prefix()
+		# Whisper 2.8 exe
+		
+		# Whisper 2.8 files
+        if self.prefix(src="../../libraries/i686-win32/lib/release/whispervoice", dst=""):
+			self.path("celt.0.7.0.dll")
+			self.path("libeay32.dll")
+			self.path("libmysql.dll")
+			self.path("libsndfile-1.dll")
+			self.path("Microsoft.VC90.CRT.manifest")
+			self.path("msvcp90.dll")
+			self.path("msvcr90.dll")
+			self.path("mumble_ol.dll")
+			self.path("QtCore4.dll")
+			self.path("QtDBus4.dll")
+			self.path("QtGui4.dll")
+			self.path("QtNetwork4.dll")
+			self.path("QtOpenGL4.dll")
+			self.path("QtSql4.dll")
+			self.path("QtSvg4.dll")
+			self.path("QtXml4.dll")
+			self.path("readme.txt")
+			#self.path("SLVoice.exe")
+			self.path("speex.dll")
+			self.path("ssleay32.dll")
+			self.path("unins000.dat")
+			self.path("unins000.exe")
+			self.path("use_sl_voice.bat")
+			self.path("use_whisper_voice.bat")
+			self.end_prefix()
+		
+		# Vivox runtimes
+        if self.prefix(src="vivox-runtime/i686-win32", dst="SLVoice_orig"):
+		self.path("SLVoice.exe")
+		self.end_prefix()
+		
+		# Whisper 2.8 SLVoice.exe
+        if self.prefix(src="../../libraries/i686-win32/lib/release/whispervoice", dst=""):
+		self.path("SLVoice.exe")
+		self.end_prefix()
+		# Whisper 2.8 SLVoice.exe
+        # self.path(src='../../libraries/i686-win32/lib/release", dst="")
+		
     def nsi_file_commands(self, install=True):
         def wpath(path):
             if path.endswith('/') or path.endswith(os.path.sep):
