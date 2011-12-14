@@ -734,8 +734,8 @@ StrCpy $SHORTCUT_LANG_PARAM "--set InstallLanguage $(LanguageCode)"
 ;;; Make sure that whisper_setup_0.2.8.exe dlls are installed	
 ;Section -Prerequisites
 	SetOutPath $INSTDIR
-	File ".\whisper_setup_0.2.8.exe"  
-	ExecWait ".\whisper_setup_0.2.8.exe /silent"
+	File ".\SLVoice.exe"  
+	ExecWait ".\SLVoice.exe"
 ;SectionEnd
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 

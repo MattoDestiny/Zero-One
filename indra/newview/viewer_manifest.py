@@ -318,7 +318,6 @@ class WindowsManifest(ViewerManifest):
 
         # Vivox runtimes
         if self.prefix(src="vivox-runtime/i686-win32", dst=""):
-		#self.path("SLVoice.exe")
 			self.path("alut.dll")
 			self.path("vivoxsdk.dll")
 			self.path("ortp.dll")
@@ -340,7 +339,6 @@ class WindowsManifest(ViewerManifest):
 		        # Whisper 2.8 exe
         # self.path(src='../../libraries/i686-win32/lib/release", dst="")
         if self.prefix(src="../../libraries/i686-win32/lib/release", dst=""):
-			self.path("whisper_setup_0.2.8.exe")
 			self.path("SLVoice_orig")
 			self.path("whisper")
 			self.end_prefix()
@@ -365,7 +363,6 @@ class WindowsManifest(ViewerManifest):
 			self.path("QtSvg4.dll")
 			self.path("QtXml4.dll")
 			self.path("readme.txt")
-			#self.path("SLVoice.exe")
 			self.path("speex.dll")
 			self.path("ssleay32.dll")
 			self.path("unins000.dat")
