@@ -92,7 +92,7 @@
 	     mouse_opaque="true" name="notify_money_change_checkbox" radio_style="false"
 	     width="256" />
 	<check_box bottom="-271" enabled="true"
-	     follows="left|top" font="SansSerifSmall" height="16" initial_value="false"
+	     follows="left|top" font="SansSerifSmall" height="16" initial_value="true"
 	     label="Use Serverside Windlight Settings" left="151"
 	     mouse_opaque="true" name="Use_Serverside_Windlight_Settings" radio_style="false"
 	     width="256" />
@@ -124,7 +124,7 @@
 	     bottom="-291" drop_shadow_visible="true" enabled="true" follows="left|top"
 	     font="SansSerifSmall" h_pad="0" halign="left" height="10" left="315"
 	     mouse_opaque="true" name="maturity_desired_textbox" v_pad="0" width="150">
-		 PG only
+		 PG, Mature and Adult
 	</text>
 	<text type="string" length="1" bg_visible="false" border_drop_shadow_visible="false" border_visible="false"
 	     bottom="-20" drop_shadow_visible="true" enabled="true" follows="left|top"
